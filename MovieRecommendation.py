@@ -4,7 +4,8 @@ from sklearn.neighbors import NearestNeighbors
 import numpy as np
 import matplotlib.pyplot as plt
 from metrics import calculate_metrics_at_k_100_users
-from Visuals import plot_metrics_at_k
+from Visuals import plot_metrics_at_k(
+
 
 # Load the ratings and movies data
 ratings = pd.read_csv("ratings.csv")
