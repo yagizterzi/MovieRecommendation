@@ -7,8 +7,8 @@ from metrics import calculate_metrics_at_k_100_users
 from Visuals import plot_metrics_at_k
 
 # Load the ratings and movies data
-ratings = pd.read_csv(r"C:\Users\yagiz\Downloads\ml-latest\ml-latest\ratings.csv")
-movies = pd.read_csv(r"C:\Users\yagiz\Downloads\ml-latest\ml-latest\movies.csv")
+ratings = pd.read_csv("ratings.csv")
+movies = pd.read_csv("movies.csv")
 
 # Create a sparse user-movie matrix
 user_movie_matrix_sparse = csr_matrix((ratings['rating'], (ratings['userId'], ratings['movieId'])))
